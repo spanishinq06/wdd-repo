@@ -1,0 +1,45 @@
+body {
+	/* SM: Background image code */
+	background-image: url('images/backg.jpg'); /* Set backg.jpg as the background image */
+	background-repeat: no-repeat;  /* Do not repeat the image if its size is exceeded */
+	background-attachment: fixed;  /* Prevent image moving on scroll */
+	background-size: cover;  /* Fill all available space on the page */
+	background-position-y: center; /* Centre the image on the Y-axis */
+	/* SM: Background image code finish */
+}
+
+#navbar {
+	background-color: #efece3;
+}
+
+.smBody {
+	/* SM */
+	
+	font-family: roboto;
+	
+}
+
+.h1SM1 {
+	background-color: white;
+	text-align: center;
+	width: 325px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	border-radius: 7px;
+}
+
+.h1SM2 {
+	background-color: white;
+	width: 240px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	border-radius: 7px;
+}
+
+.img1SM {
+	width: 21%;
+	height: 21%;
+}
