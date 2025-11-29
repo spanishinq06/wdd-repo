@@ -66,71 +66,131 @@
 	  <br>
 	  <div class="row bg-white rounded p-2">
 		<div class="col sm-6">
-		  <form name="detailsForm">
+		  <form name="detailsForm" onsubmit="return performValidation()" onreset="resetErrors()">
 			<label for="formName">Name</label><br>
-				<input id="formName" type="text" placeholder="Please enter name">
-			<br><br>
+				<input id="formName" type="text" name="name" placeholder="Please enter name"><br>
+			<span id="nameErrorMsg" class="formError"></span>
+			<br>
 			<label for="formEmail">Email</label><br>
-				<input id="formEmail" type="text" placeholder="Please enter email">
-			<br><br>
+				<input id="formEmail" type="text" placeholder="Please enter email"><br>
+			<span id="emailErrorMsg" class="formError"></span>
+			<br>
 			<label for="formCounty">County</label><br>
 				<select id="formCounty" name="County">
 					<option value="">Select County</option>
-					<option value="cw">Carlow</option>
-					<option value="cn">Cavan</option>
-					<option value="ce">Clare</option>
-					<option value="ck">Cork</option>
-					<option value="dl">Donegal</option>
-					<option value="dn">Dublin</option>
-					<option value="gy">Galway</option>
-					<option value="ky">Kerry</option>
-					<option value="ke">Kildare</option>
-					<option value="kk">Kilkenny</option>
-					<option value="ls">Laois</option>
-					<option value="lm">Leitrim</option>
-					<option value="lk">Limerick</option>
-					<option value="ld">Longford</option>
-					<option value="lh">Louth</option>
-					<option value="mo">Mayo</option>
-					<option value="mh">Meath</option>
-					<option value="oy">Offaly</option>
-					<option value="rn">Roscommon</option>
-				</select>
-			<br><br>
+					<option value="Carlow">Carlow</option>
+					<option value="Cavan">Cavan</option>
+					<option value="Clare">Clare</option>
+					<option value="Cork">Cork</option>
+					<option value="Donegal">Donegal</option>
+					<option value="Dublin">Dublin</option>
+					<option value="Galway">Galway</option>
+					<option value="Kerry">Kerry</option>
+					<option value="Kildare">Kildare</option>
+					<option value="Kilkenny">Kilkenny</option>
+					<option value="Laois">Laois</option>
+					<option value="Leitrim">Leitrim</option>
+					<option value="Limerick">Limerick</option>
+					<option value="Longford">Longford</option>
+					<option value="Louth">Louth</option>
+					<option value="Mayo">Mayo</option>
+					<option value="Meath">Meath</option>
+					<option value="Offaly">Offaly</option>
+					<option value="Roscommon">Roscommon</option>
+				</select><br>
+			<span id="countyErrorMsg" class="formError"></span>
+			<br>
 			Our organization is 100% not-for-profit, meaning all of our profits go directly to helping us reach our goal. Please consider donating to our organization in order to support us in this matter.
-			<br><br>
-			Please select an amount to donate:<br>
-			<form>
-				<input type="radio" id="donationNone" name="donationValue" value="none">
-				<label for="donationNone">No Donation</label><br>
-				<input type="radio" id="donationOne" name="donationValue" value="oneEuro">
-				<label for="donationOne">Donate €1</label><br>
-				<input type="radio" id="donationTwo" name="donationValue" value="twoEuro">
-				<label for="donationTwo">Donate €2</label><br>
-				<input type="radio" id="donationFive" name="donationValue" value="fiveEuro">
-				<label for="donationFive">Donate €5</label><br>
-				<br>
-				<input type="checkbox" id="agreement" name="TsAndCs">
-				<label for="agreement">I agree for my personal data to be processed.</label><br>
-				<input type="checkbox" id="newsletter" name="Newsletter">
-				<label for="newsletter">I agree to be signed up to the monthly newsletter, using my email provided.</label><br>
-				<br>
-				<button type="submit">Submit</button>
-				<button type="reset">Reset Form</button>
+			<br>
+			<label for="donationAmount">Type an amount to donate, in Euro, using whole numbers:</label><br>
+			<input id="donationValue" type="text" name="donationAmount" placeholder="5"><br>
+			<span id="donationErrorMsg" class="formError"></span>
+			<br>
+			<input type="checkbox" id="agreement" name="TsAndCs">
+			<label for="agreement">I agree for my personal data to be processed.</label><br>
+			<span id="agreementErrorMsg" class="formError"></span><br>
+			<input type="checkbox" id="newsletter" name="Newsletter">
+			<label for="newsletter">I agree to be signed up to the monthly newsletter, using my email provided.</label><br>
+			<br>
+			<button type="submit">Submit</button>
+			<button type="reset">Reset Form</button>
 		  </form>
 		</div>
 	  </div>
 	</div>
 	
-
-
 	
-	
-</body>
-	
-</html>
-	
-	
+	<script>
+		function performValidation() {
+			const name = document.getElementById("formName").value;
+			const email = document.getElementById("formEmail").value;
+			const county = document.getElementById("formCounty").value;
+			const donation = document.getElementById("donationValue").value;
+			const agreement = document.getElementById("agreement").checked;
+			const newsletter = document.getElementById("newsletter").checked;
+			
+			const nameError = document.getElementById("nameErrorMsg");
+			const emailError = document.getElementById("emailErrorMsg");
+			const countyError = document.getElementById("countyErrorMsg");
+			const donationError = document.getElementById("donationErrorMsg");
+			const agreementError = document.getElementById("agreementErrorMsg");
+			
+			nameError.textContent = "";
+			emailError.textContent = "";
+			countyError.textContent = "";
+			donationError.textContent = "";
+			agreementError.textContent = "";
+			
+			let validator = true;
+			
+			if (name === "" || name.length < 3) {
+				nameError.textContent = "Please enter your name.";
+				validator = false;
+			}
+			
+			if (email === "" || !email.includes("@") || !email.includes(".")) {
+				emailError.textContent = "Please enter a valid email.";
+				validator = false;
+			}
+			
+			if (county === "") {
+				countyError.textContent = "Please select a county.";
+				validator = false;
+			}
+			
+			if (donation === "") {
+				donationError.textContent = "Please enter an amount to donate. Type 0 for no donation.";
+				validator = false;
+			}
+			
+			if (!agreement) {
+				agreementError.textContent = "Please agree to the terms and conditions.";
+				validator = false;
+			}
+			
+			if (validator) {
+				confirmation = confirm("Form submitted successfully. Please press 'OK' to view your answers, or press 'Cancel' to exit.")
+				if (confirmation && newsletter) {
+					alert("Your name is " + name + ". Your email is " + email + ". Your selected county is " + county + ". You are donating €" + donation + ". You will receive a confirmation email to receive our newsletter; please check your spam folder just in case!")
+				}
+				if (confirmation && !newsletter) {
+					alert("Your name is " + name + ". Your email is " + email + ". Your selected county is " + county + ". You are donating €" + donation + ". You have opted not to receive our newsletter.")
+				}
+				return true;
+			} else {
+				return false;
+			}
+		}
+		
+		function resetErrors() {
+			document.getElementById("nameErrorMsg").textContent = "";
+			document.getElementById("emailErrorMsg").textContent = "";
+			document.getElementById("countyErrorMsg").textContent = "";
+			document.getElementById("donationErrorMsg").textContent = "";
+			document.getElementById("agreementErrorMsg").textContent = "";
+		}
+		
+	</script>
 	
 	
 </body>
