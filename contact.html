@@ -60,22 +60,64 @@
 	
 	  <div class="row bg-white rounded p-2">
 		<div class="col sm-12">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet varius orci. Morbi porttitor magna diam, eget dapibus massa auctor in. Quisque eu elementum mauris. Duis turpis libero, egestas id metus sed, mattis placerat erat. Sed bibendum nisi dolor, vitae luctus sapien molestie consequat. Aliquam laoreet lectus nec quam porta, non eleifend dui rhoncus. Cras at ultrices turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-		<br><br>
-		Donec interdum orci quis nunc tempor, vitae placerat quam porttitor. Suspendisse in lectus risus. Maecenas venenatis hendrerit tristique. Praesent auctor felis id interdum consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque pulvinar libero in sapien iaculis, sit amet viverra nisi ullamcorper. Proin nisl nibh, placerat non auctor vitae, feugiat at sem.
+		If you would like to contact us regarding any matter, please fill out the short form below and we will reply to your email within 3 business days. There is also an option to sign up for our monthly newsletter too, where we report on our actions towards achieving the goal. This is released via email on Mondays at 4pm GMT.
 		</div>
 	  </div>
 	  <br>
 	  <div class="row bg-white rounded p-2">
 		<div class="col sm-6">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet varius orci. Morbi porttitor magna diam, eget dapibus massa auctor in. Quisque eu elementum mauris. Duis turpis libero, egestas id metus sed, mattis placerat erat. Sed bibendum nisi dolor, vitae luctus sapien molestie consequat. Aliquam laoreet lectus nec quam porta, non eleifend dui rhoncus. Cras at ultrices turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-		<br><br>
-		Donec interdum orci quis nunc tempor, vitae placerat quam porttitor. Suspendisse in lectus risus. Maecenas venenatis hendrerit tristique. Praesent auctor felis id interdum consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque pulvinar libero in sapien iaculis, sit amet viverra nisi ullamcorper. Proin nisl nibh, placerat non auctor vitae, feugiat at sem.
-		</div>
-		<div class="col sm-6">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet varius orci. Morbi porttitor magna diam, eget dapibus massa auctor in. Quisque eu elementum mauris. Duis turpis libero, egestas id metus sed, mattis placerat erat. Sed bibendum nisi dolor, vitae luctus sapien molestie consequat. Aliquam laoreet lectus nec quam porta, non eleifend dui rhoncus. Cras at ultrices turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-		<br><br>
-		Donec interdum orci quis nunc tempor, vitae placerat quam porttitor. Suspendisse in lectus risus. Maecenas venenatis hendrerit tristique. Praesent auctor felis id interdum consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque pulvinar libero in sapien iaculis, sit amet viverra nisi ullamcorper. Proin nisl nibh, placerat non auctor vitae, feugiat at sem.
+		  <form name="detailsForm">
+			<label for="formName">Name</label><br>
+				<input id="formName" type="text" placeholder="Please enter name">
+			<br><br>
+			<label for="formEmail">Email</label><br>
+				<input id="formEmail" type="text" placeholder="Please enter email">
+			<br><br>
+			<label for="formCounty">County</label><br>
+				<select id="formCounty" name="County">
+					<option value="">Select County</option>
+					<option value="cw">Carlow</option>
+					<option value="cn">Cavan</option>
+					<option value="ce">Clare</option>
+					<option value="ck">Cork</option>
+					<option value="dl">Donegal</option>
+					<option value="dn">Dublin</option>
+					<option value="gy">Galway</option>
+					<option value="ky">Kerry</option>
+					<option value="ke">Kildare</option>
+					<option value="kk">Kilkenny</option>
+					<option value="ls">Laois</option>
+					<option value="lm">Leitrim</option>
+					<option value="lk">Limerick</option>
+					<option value="ld">Longford</option>
+					<option value="lh">Louth</option>
+					<option value="mo">Mayo</option>
+					<option value="mh">Meath</option>
+					<option value="oy">Offaly</option>
+					<option value="rn">Roscommon</option>
+				</select>
+			<br><br>
+			Our organization is 100% not-for-profit, meaning all of our profits go directly to helping us reach our goal. Please consider donating to our organization in order to support us in this matter.
+			<br><br>
+			Please select an amount to donate:<br>
+			<form>
+				<input type="radio" id="donationNone" name="donationValue" value="none">
+				<label for="donationNone">No Donation</label><br>
+				<input type="radio" id="donationOne" name="donationValue" value="oneEuro">
+				<label for="donationOne">Donate €1</label><br>
+				<input type="radio" id="donationTwo" name="donationValue" value="twoEuro">
+				<label for="donationTwo">Donate €2</label><br>
+				<input type="radio" id="donationFive" name="donationValue" value="fiveEuro">
+				<label for="donationFive">Donate €5</label><br>
+				<br>
+				<input type="checkbox" id="agreement" name="TsAndCs">
+				<label for="agreement">I agree for my personal data to be processed.</label><br>
+				<input type="checkbox" id="newsletter" name="Newsletter">
+				<label for="newsletter">I agree to be signed up to the monthly newsletter, using my email provided.</label><br>
+				<br>
+				<button type="submit">Submit</button>
+				<button type="reset">Reset Form</button>
+		  </form>
 		</div>
 	  </div>
 	</div>
