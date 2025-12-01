@@ -1,6 +1,788 @@
-body {
+/* Oran King CSS */
+.urban1_OK{
+	
+	width: 300px;
+	border-radius: 50%;
+	float: right;
+	padding: 10px 5px;
+	display: inline-block;
+	margin-left: 20px;
+	
+}
+
+.urban2_OK{
+	margin: auto;
+	border-radius: 50%;
+	float: left;
+	width: 20%;
+	padding: 10px 5px;
+	
+}
+
+.urban3_OK{
+	margin: auto;
+	width: 20%;
+	border-radius: 50%;
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 5px;
+	display: inline-block;
+}
+
+.urban4_OK{
+	margin: auto;
+	width: 300px;
+	border-radius: 50%;
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 5px;
+	display: inline-block;
+}
+
+.urban7_OK{
+	 width: 100%;                
+    height: auto;                 
+    display: block;              
+    object-fit: cover;            
+	
+}
+
+
+/* main container */
+.container{
+	
+}
+/* div1 */
+.div1_OK{
+	border-style: groove;
+    border-width: 5px;
+	border-radius: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #8FABD4;
+	border-color: #4A70A9;
+}
+
+.div2_OK{
+	border-style: groove;
+    border-width: 5px;
+	border-radius: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #8FABD4;
+	border-color: #4A70A9;
+}
+
+.div3_OK{
+	border-style: groove;
+    border-width: 5px;
+	border-radius: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #8FABD4;
+	border-color: #4A70A9;
+	flex: 1;
+    min-width: 0;
+}
+
+.div4_OK{
+	border-style: groove;
+    border-width: 5px;
+	border-radius: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #8FABD4;
+	border-color: #4A70A9;
+}
+
+.div6_OK{
+	border-style: groove;
+    border-width: 10px;           
+    border-radius: 15px;
+    
+    padding: 5px;
+    background-color: #8FABD4;
+    border-color: #4A70A9;
+
+    
+    max-width: 800px;
+    min-width: 300px;
+    margin: 20px auto;            
+    overflow: hidden;             
+	
+}
+
+.div5_OK{
+	border-style: groove;
+    border-width: 5px;
+	border-radius: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #8FABD4;
+	border-color: #4A70A9;
+}
+
+.div7_OK{
+	border-style: groove;
+    border-width: 5px;
+	border-radius: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #8FABD4;
+	border-color: #4A70A9;
+}
+/* font 2 */
+.font2_OK {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font2_OKBold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font2_OKitalic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+ /* Main font */
+.font1_OK {
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.titleAU{
+	text-align: center;
+	border: solid #000000 2px;
+	background-color: #4A70A9;
+	border-style: groove;
+    border-width: 5px;
+	border-radius: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: fit-content;
+	margin: auto;
+	padding-top: 5px;
+
+}
+
+.titleR2{
+	text-align: center;
+	border: solid #000000 2px;
+	background-color: #4A70A9;
+	border-style: groove;
+    border-width: 5px;
+	border-radius: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: fit-content;
+	margin: auto;
+
+}
+
+.body1_ok{
+	background-image: url("../images/urban2.jpg");
+	background-repeat: no-repeat;  /* Do not repeat the image if its size is exceeded */
+	background-attachment: fixed;  /* Prevent image moving on scroll */
+	background-size: cover;  /* Fill all available space on the page */
+	background-position-y: center; /* Centre the image on the Y-axis */
+}
+
+.body2_ok{
+	background-image: url("../images/urban5.jpg");
+	background-repeat: no-repeat;  /* Do not repeat the image if its size is exceeded */
+	background-attachment: fixed;  /* Prevent image moving on scroll */
+	background-size: cover;  /* Fill all available space on the page */
+	background-position-y: center; /* Centre the image on the Y-axis */
+}
+
+.titleh4_OK{
+	text-align: center;
+	margin: auto;
+}
+
+.content-wrapper_OK {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+/* Dropdown box */
+.divDropdown_OK {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+	
+    flex: 1;
+    min-width: 0; /* prevents overflow issues */
+}
+
+
+.dropdown-header_OK {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdownContainer_OK {
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #fff;
+}
+
+.arrow_OK {
+    font-size: 0.8rem;
+}
+
+/* Dropdown content */
+.dropdownMenu_OK {
+    margin-top: 12px;
+    display: none;
+}
+
+.dropdownMenu_OK.open {
+    display: block;
+}
+
+.twoColumnWrapper_OK {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+
+/* Oran King CSS End*/
+
+/*karls css start*/
+
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.marcellus-regular {
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.h3-KW{text-align: center}
+
+.body-KW{background-image:url("../img/backg.jpg");
+		background-repeat: no-repeat;
+		background-attachment:fixed;
+		background-size:cover;
+		background-position-y:center;
+		}
+.h1-kw{text-align: center;
+		background-color:#8FABD4;
+		width:250px;
+		margin-left: auto;
+		margin-right:auto;
+		border: 10px solid #4A70A9 ;
+		border-radius: 25px;
+		text-decoration: underline;
+		}
+		
+		
+@media screen and (min-width: 461px) and (max-width: 1920px) {
+.navbar{background-color: #EFECE3}
+	
+#rowoneKW{border: 10px solid #4A70A9 ;
+		border-radius: 25px}
+ 
+#row2KW{border: 10px solid #4A70A9 ;
+		border-radius: 25px}
+
+#KW-P4-div1{background-color:#8FABD4 ;
+		border-radius: 15px 0px 0px 15px
+			}
+
+#KW-P4-div2{background-color:#8FABD4;
+		border-radius: 0px 15px 15px 0px }
+
+#KW-P4-div3{background-color:#8FABD4;
+			border-radius: 15px 0px 0px 15px}
+
+#KW-P4-div4{background-color:#8FABD4;
+		border-radius: 0px 15px 15px 0px }
+
+#KW-P4-img1{height:400px;
+		width:100%}
+		
+#KW-P1-img1 {float: left;
+			height:300px;
+			width:300px;
+			margin:15px}
+		
+
+#KW-P4-img2{height:400px;
+			width:100%}
+			
+.div-1-KW{background-color:#8FABD4;
+		border-radius: 15px;
+}
+
+.row-1-KW{border: 10px solid #4A70A9 ;
+		border-radius: 25px}
+		
+.div-2-KW{background-color:#8FABD4;
+		border-radius: 15px;
+}
+
+.row-2-KW{border: 10px solid #4A70A9 ;
+		border-radius: 25px}
+		
+#KW-P1-img2 {float: right;
+			height:300px;
+			width:300px;
+			margin:15px}
+		
+
+		
+}
+
+@media screen and (min-width: 360px) and (max-width: 460px) {
+.navbar{background-color:#EFECE3}
+	
+#rowoneKW{border: 10px solid #4A70A9 ;
+		border-radius: 25px}
+ 
+#row2KW{border: 10px solid #4A70A9 ;
+		border-radius: 25px}
+
+#KW-P4-div1{background-color:#8FABD4 ;
+		border-radius:15px 15px 0px 0px}
+
+#KW-P4-div2{background-color:#8FABD4;
+		border-radius: 0px 0px 15px 15px  }
+
+#KW-P4-div3{background-color:#8FABD4;
+			border-radius:15px 15px 0px 0px }
+
+#KW-P4-div4{background-color:#8FABD4;
+		border-radius:0px 0px 15px 15px  }
+
+#KW-P4-img1{height:400px;
+		width:100%}
+		
+#KW-P1-img1 {float: left;
+			height:300px;
+			width:300px;
+			margin:15px}
+		
+
+#KW-P4-img2{height:400px;
+			width:100%}
+			
+.div-1-KW{background-color:#8FABD4;
+		border-radius: 15px;
+}
+
+.row-1-KW{border: 10px solid #4A70A9 ;
+		border-radius: 25px}
+		
+.div-2-KW{background-color:#8FABD4;
+		border-radius: 15px;
+}
+
+.row-2-KW{border: 10px solid #4A70A9 ;
+		border-radius: 25px}
+		
+#KW-P1-img2 {float: right;
+			height:300px;
+			width:300px;
+			margin:15px}
+
+}
+
+/*karls css end*/ 
+
+/* Leila Stowe CSS starts */
+
+/* css for both webpages */
+.ls_body{
+	background-color:#EFECE3;
+}
+
+#navbar{
+	background-color:#8FABD4;
+}
+
+.ls_h1{
+	color:#EFECE3;
+	text-align:center;
+	background-color:#4A70A9;
+	font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-style: normal;
+	padding:3%;
+	margin-bottom:0px;
+}
+
+.ls_p{
+	font-family: "Marcellus", serif;
+	font-weight: 400;
+	font-style: normal;
+	
+}
+
+.button {
+	color:black;
+	border: none;
+	background-color:#EFECE3;
+	padding: 1.5% 3%;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	border-radius:25px;
+	font-family: "Marcellus", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+@media screen and (min-width: 981px) and (max-width: 1920px) {
+	/* Introduction section */
+	
+	.intro{
+		background-color:#8FABD4;
+		border-radius:25px;
+		padding:3%;
+		margin-top:3%;
+	}
+
+	.introCity{
+		height:40%;
+		width:45%;
+		float:left;
+		padding-right:3%;
+	}
+
+	.introCityTwo{
+		height:40%;
+		width:50%;
+		float:right;
+		padding-left:3%;
+	}
+	
+
+	/* Research preview section on the home page*/
+
+	.rPreview{
+		background-color:#8FABD4;
+		border-radius:25px;
+		padding:3%;
+		margin-top:3%;
+	}
+
+	.rPreviewBike{
+		height:80%;
+		width:45%;
+		float:right;
+		padding-left:3%;
+	}
+
+
+	/* image carousel */
+	.carousel{
+		height:60%;
+		width:75%;
+		padding-top:3%;
+		margin-left:10%;
+	}
+
+	/* research overview page */
+	.research{
+		background-color:#8FABD4;
+		border-radius:25px;
+		padding:3%;
+		margin-top:3%;
+	}
+
+	.rBikes{
+		height:75%;
+		width:40%;
+		float:left;
+		padding-right:3%;
+	}
+	
+	#aButton{
+		margin-left:10%;
+	}
+
+	.rBus{
+		height:70%;
+		width:50%;
+		float:right;
+		padding-left:3%;
+	}
+
+	#bButton{
+		margin-left:70%;
+	}
+
+	.rCity{
+		height:80%;
+		width:45%;
+		float:left;
+		padding-right:3%;
+	}
+	
+	#cButton{
+		margin-left:10%;
+	}
+
+	.rCityTwo{
+		height:80%;
+		width:55%;
+		float:right;
+		padding-left:3%;
+	}
+
+	#dButton{
+		margin-left:70%;
+	}
+}
+
+@media screen and (min-width: 461px) and (max-width: 980px) {
+	/* Introduction section */
+	
+	.intro{
+		background-color:#8FABD4;
+		border-radius:25px;
+		padding:3%;
+		margin-top:3%;
+		padding-bottom:20%;
+	}
+
+	.introCity{
+		height:30%;
+		width:45%;
+		float:left;
+		padding-right:3%;
+	}
+
+	.introCityTwo{
+		height:30%;
+		width:40%;
+		float:right;
+		padding-left:3%;
+	}
+	
+
+	/* Research preview section on the home page*/
+
+	.rPreview{
+		background-color:#8FABD4;
+		border-radius:25px;
+		padding:3%;
+		margin-top:3%;
+		padding-bottom:20%;
+	}
+
+	.rPreviewBike{
+		height:60%;
+		width:45%;
+		float:right;
+		padding-left:3%;
+	}
+
+
+	/* image carousel */
+	.carousel{
+		height:60%;
+		width:75%;
+		padding-top:3%;
+		margin-left:10%;
+	}
+
+	/* research overview page */
+	.research{
+		background-color:#8FABD4;
+		border-radius:25px;
+		padding:3%;
+		margin-top:3%;
+		padding-bottom:20%;
+	}
+
+	.rBikes{
+		height:55%;
+		width:60%;
+		float:left;
+		padding-right:3%;
+	}
+	
+	#aButton{
+		margin-left:10%;
+	}
+
+	.rBus{
+		height:50%;
+		width:70%;
+		float:right;
+		padding-left:3%;
+	}
+
+	#bButton{
+		margin-left:70%;
+	}
+
+	.rCity{
+		height:50%;
+		width:65%;
+		float:left;
+		padding-right:3%;
+	}
+	
+	#cButton{
+		margin-left:10%;
+	}
+
+	.rCityTwo{
+		height:50%;
+		width:65%;
+		float:right;
+		padding-left:3%;
+	}
+
+	#dButton{
+		margin-left:70%;
+	}
+}
+
+/* mobile version */
+@media screen and (min-width: 360px) and (max-width: 460px) {
+	/* Introduction section */	
+		
+	.intro{
+		background-color:#8FABD4;
+		border-radius:25px;
+		padding:3%;
+		margin-top:3%;
+		margin-top:3%;
+		padding-bottom:15%;
+	}
+
+	.introCity{
+		height:20%;
+		width:75%;
+		padding-bottom:3%;
+		margin-left:10%;
+	}
+
+	.introCityTwo{
+		height:20%;
+		width:85%;
+		padding-bottom:3%;
+		margin-left:6%;
+	}
+	
+	
+	/* Research preview section on home page */
+
+	.rPreview{
+		background-color:#8FABD4;
+		border-radius:25px;
+		padding:3%;
+		margin-top:3%;
+		padding-bottom:15%;
+	}
+
+	.rPreviewBike{
+		height:30%;
+		width:85%;
+		padding-bottom:3%;
+		margin-left:8%;
+	}
+
+
+	/* image carousel */
+	.carousel{
+		height:60%;
+		width:75%;
+		padding-top:3%;
+		margin-left:10%;
+	}
+
+	/* research overview page */
+	.research{
+		background-color:#8FABD4;
+		border-radius:25px;
+		padding:3%;
+		margin-top:3%;
+		padding-bottom:15%;
+	}
+
+	.rBikes{
+		height:30%;
+		width:75%;
+		padding-bottom:3%;
+		margin-left:10%;
+	}
+
+	.rBus{
+		height:30%;
+		width:85%;
+		padding-bottom:3%;
+		margin-left:6%;
+	}
+
+
+	.rCity{
+		height:30%;
+		width:75%;
+		padding-bottom:3%;
+		margin-left:10%;
+	}
+
+	.rCityTwo{
+		height:30%;
+		width:75%;
+		padding-bottom:3%;
+		margin-left:10%;
+	}
+
+	.button{
+		margin-left:30%;
+	}
+}
+
+/* Leila Stowe CSS ends */
+
+/* SM CSS Start */
+.body_SM{
+
 	/* SM: Background image code */
-	background-image: url('images/backg.jpg'); /* Set backg.jpg as the background image */
+	background-image: url("../images/backg.jpg"); /* Set backg.jpg as the background image */
 	background-repeat: no-repeat;  /* Do not repeat the image if its size is exceeded */
 	background-attachment: fixed;  /* Prevent image moving on scroll */
 	background-size: cover;  /* Fill all available space on the page */
@@ -15,7 +797,7 @@ body {
 .h1SM1 {
 	background-color: white;
 	text-align: center;
-	width: 350px;
+	width: 550px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 5px;
@@ -33,8 +815,17 @@ body {
 }
 
 .img1SM {
-	width: 21%;
-	height: 21%;
+	width: 600px;
+	height: 400px;
+}
+
+.formError {
+	color: red;
+}
+
+.footerSM {
+	background-color: #efece3;
+	padding: 5px;
 }
 
 .libre-baskerville-regular {
@@ -55,3 +846,5 @@ body {
   font-weight: 400;
   font-style: italic;
 }
+
+/* SM CSS End */

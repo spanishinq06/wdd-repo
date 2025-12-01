@@ -67,15 +67,15 @@
 	  <div class="row bg-white rounded p-2">
 		<div class="col sm-6">
 		  <form name="detailsForm" onsubmit="return performValidation()" onreset="resetErrors()">
-			<label for="formName">Full Name</label><br>
+			<label for="formName">Full Name (required)</label><br>
 				<input id="formName" type="text" name="name" placeholder="Please enter name"><br>
 			<span id="nameErrorMsg" class="formError"></span>
 			<br>
-			<label for="formEmail">Email</label><br>
+			<label for="formEmail">Email (required)</label><br>
 				<input id="formEmail" type="text" placeholder="Please enter email"><br>
 			<span id="emailErrorMsg" class="formError"></span>
 			<br>
-			<label for="formCounty">County of Residence</label><br>
+			<label for="formCounty">County of Residence (required)</label><br>
 				<select id="formCounty" name="County">
 					<option value="">Select County</option>
 					<option value="Carlow">Carlow</option>
@@ -100,12 +100,12 @@
 				</select><br>
 			<span id="countyErrorMsg" class="formError"></span>
 			<br>
-			<label for="donationAmount">Our organization is 100% not-for-profit, meaning all of our profits go directly to helping us reach our goal. Please consider donating to our organization in order to support us in this matter.<br>Type an amount to donate, in Euro, using whole numbers:</label><br>
-			<input id="donationValue" type="text" name="donationAmount" placeholder="5"><br>
+			<label for="donationAmount">Our organization is 100% not-for-profit, meaning all of our profits go directly to helping us reach our goal. Please consider donating to our organization in order to support us in this matter.<br>Type an amount to donate, in Euro, using whole numbers: (required)</label><br>
+			<input id="donationValue" type="text" name="donationAmount" placeholder="5" maxlength="3"><br>
 			<span id="donationErrorMsg" class="formError"></span>
 			<br>
 			<input type="checkbox" id="agreement" name="TsAndCs">
-			<label for="agreement">I consent for my personal data to be processed.</label><br>
+			<label for="agreement">I consent for my personal data to be processed. (required)</label><br>
 			<span id="agreementErrorMsg" class="formError"></span><br>
 			<input type="checkbox" id="newsletter" name="Newsletter">
 			<label for="newsletter">I agree to be signed up to the monthly newsletter, using my email provided.</label><br>
@@ -162,7 +162,7 @@
 			}
 			
 			if (!agreement) {
-				agreementError.textContent = "Please agree to the terms and conditions.";
+				agreementError.textContent = "Please agree for your data to be processed.";
 				validator = false;
 			}
 			
