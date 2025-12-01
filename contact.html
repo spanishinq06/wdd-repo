@@ -60,14 +60,14 @@
 	
 	  <div class="row bg-white rounded p-2">
 		<div class="col sm-12">
-		If you would like to contact us regarding any matter, please fill out the short form below and we will reply to your email within 3 business days. There is also an option to sign up for our monthly newsletter too, where we report on our actions towards achieving the goal. This is released via email on Mondays at 4pm GMT.
+		  If you would like to contact us regarding any matter, please fill out the short form below. Within 3 business days, we will email you with a link to a live chat with one of our agents. There is also an option to sign up for our monthly newsletter too, where we report on our actions towards achieving the goal. This is released via email on Mondays at 4pm GMT.
 		</div>
 	  </div>
 	  <br>
 	  <div class="row bg-white rounded p-2">
 		<div class="col sm-6">
 		  <form name="detailsForm" onsubmit="return performValidation()" onreset="resetErrors()">
-			<label for="formName">Name</label><br>
+			<label for="formName">Full Name</label><br>
 				<input id="formName" type="text" name="name" placeholder="Please enter name"><br>
 			<span id="nameErrorMsg" class="formError"></span>
 			<br>
@@ -75,7 +75,7 @@
 				<input id="formEmail" type="text" placeholder="Please enter email"><br>
 			<span id="emailErrorMsg" class="formError"></span>
 			<br>
-			<label for="formCounty">County</label><br>
+			<label for="formCounty">County of Residence</label><br>
 				<select id="formCounty" name="County">
 					<option value="">Select County</option>
 					<option value="Carlow">Carlow</option>
@@ -100,14 +100,12 @@
 				</select><br>
 			<span id="countyErrorMsg" class="formError"></span>
 			<br>
-			Our organization is 100% not-for-profit, meaning all of our profits go directly to helping us reach our goal. Please consider donating to our organization in order to support us in this matter.
-			<br>
-			<label for="donationAmount">Type an amount to donate, in Euro, using whole numbers:</label><br>
+			<label for="donationAmount">Our organization is 100% not-for-profit, meaning all of our profits go directly to helping us reach our goal. Please consider donating to our organization in order to support us in this matter.<br>Type an amount to donate, in Euro, using whole numbers:</label><br>
 			<input id="donationValue" type="text" name="donationAmount" placeholder="5"><br>
 			<span id="donationErrorMsg" class="formError"></span>
 			<br>
 			<input type="checkbox" id="agreement" name="TsAndCs">
-			<label for="agreement">I agree for my personal data to be processed.</label><br>
+			<label for="agreement">I consent for my personal data to be processed.</label><br>
 			<span id="agreementErrorMsg" class="formError"></span><br>
 			<input type="checkbox" id="newsletter" name="Newsletter">
 			<label for="newsletter">I agree to be signed up to the monthly newsletter, using my email provided.</label><br>
@@ -144,7 +142,7 @@
 			let validator = true;
 			
 			if (name === "" || name.length < 3) {
-				nameError.textContent = "Please enter your name.";
+				nameError.textContent = "Please enter your full name. Include your forename(s) and your surname.";
 				validator = false;
 			}
 			
@@ -154,7 +152,7 @@
 			}
 			
 			if (county === "") {
-				countyError.textContent = "Please select a county.";
+				countyError.textContent = "Please select your county of residence.";
 				validator = false;
 			}
 			
