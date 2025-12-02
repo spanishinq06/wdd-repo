@@ -2,6 +2,8 @@
 .body_SM{
 
 	/* SM: Background image code */
+	/* The below photo is my own. I took this photo on 17th August 2023 */
+	
 	background-image: url("../images/sm_Backg.jpg"); /* Set backg.jpg as the background image */
 	background-repeat: no-repeat;  /* Do not repeat the image if its size is exceeded */
 	background-attachment: fixed;  /* Prevent image moving on scroll */
