@@ -1,1 +1,1 @@
-NO CLUES!!!
+This website is raising awareness about the ever-increasing carbon emissions within Ireland, such as the terrible congestion in Dublin City and newly introduced electric buses in Dublin, Athlone and Limerick.
